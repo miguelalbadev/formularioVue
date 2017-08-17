@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<title>My first vue app</title>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="jquery-3.2.1.js" type="text/javascript"></script> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<div class="personList" id="app">
+		<ol>
+		    <personas
+		      v-for="persona in personasList"
+		      v-bind:todo="persona"
+		      v-bind:key="persona.id">
+		    </personas>
+		</ol>
+	</div>
+	
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
+
+
+
+
