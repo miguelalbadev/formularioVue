@@ -19,6 +19,33 @@
 		    </personas>
 		</ol>
 	</div>
+
+	<div id="app2">
+		<fieldset v-if="seen">
+	      <legend>Datos personales</legend>
+	     	<form onSubmit="">
+	          <label>
+	            Name:
+	            <input id="textNombre" type="text" v-model="Name" onChange=""/>
+	          </label>
+	          <br/><br/>
+	          <label>
+	            Apellidos:
+	            <input id="textApellidos" type="text" v-model="LastName" onChange="" />
+	          </label>
+	          <br/><br/>
+	          <label>
+	            Edad:
+	            <input id="textEdad" type="text" v-model="Age" onChange="" />
+	          </label>
+	          <br/><br/>
+	          <button v-on:click="guardar" type="button" id="buttonCrear">Guardar</button>
+	          <button v-on:click="nuevo" type="button" id="buttonNuevo">Nuevo</button>
+	          <button v-on:click="eliminar" type="button" id="buttonEliminar">Eliminar</button>
+	          
+	        </form>
+      </fieldset>'
+	</div>
 	
 	<script type="text/javascript" src="index.js"></script>
 </body>

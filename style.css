@@ -106,6 +106,32 @@
 
 }
 
+#textNombre{
+	margin-left: 75px;
+}
+
+#textApellidos{
+	margin-left: 50px;
+}
+
+#textEdad{
+	margin-left: 80px;
+}
+
+#buttonEliminar{
+	margin-left: 25px;
+	
+}
+
+#buttonNuevo{
+	margin-left: 25px;
+}
+
+fieldset{
+	border:none;
+	margin-left:65px;
+
+}
  
 
 /* End css list with numeber circle background -------------- */
